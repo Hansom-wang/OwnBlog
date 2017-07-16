@@ -4,7 +4,7 @@
   "description": "my own blog",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'myblog'"，
+    "start": "NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'myblog'",
     "heroku": "NODE_ENV=production node --harmony index"
   },
   "author": "",
