@@ -125,7 +125,9 @@ router.post('/:postId/edit',checkLogin,function (req,res,next) {
 router.get('/:postId/remove',checkLogin,function(req,res,next){
 	var postId=req.params.postId;
 	var author=req.session.user._id;
-
+debugger;
+     if(confirm('确定要删除吗？'))
+     {
 	PostModel.delPostById(postId,author)
 		.then(function(){
 			req.flash('success',"删除文章成功");
@@ -133,6 +135,7 @@ router.get('/:postId/remove',checkLogin,function(req,res,next){
 			res.redirect("/posts");
 		})
 		.catch(next)
+	}
 });
 
 //POST /posts/:postId/comment 创建一条留言

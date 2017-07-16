@@ -1,11 +1,11 @@
 {
-  "name": "myblog",
+  "name": "我的博客",
   "version": "1.0.0",
-  "description": "my own blog",
+  "description": "基于nodeJs搭建的博客",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'myblog'",
-    "heroku": "NODE_ENV=production node --harmony index"
+    "start": "cross-env NODE_ENV=default pm2 start index.js --node-args='--harmony' --name 'myblog'",
+    "heroku": "NODE_ENV=default node --harmony index"
   },
   "author": "",
   "license": "ISC",

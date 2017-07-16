@@ -14,7 +14,7 @@ a:hover
 
 .button
 {
-	background-color:#4fco8d !important;
+	background-color:#4fc08d !important;
 	color:#fff !important;
 }
 
@@ -50,7 +50,7 @@ a:hover
 	z-index:999;
 }
 
-.nav-setting -ui.dropdown.button
+.nav-setting .ui.dropdown.button
 {
 	padding:10px 10px 0 10px;
 	background-color:#fff !important;
